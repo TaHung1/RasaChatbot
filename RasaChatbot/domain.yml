@@ -71,7 +71,12 @@ responses:
   utter_cam_on:
   - text: Không có gì
   utter_check_in:
-  - text: 'Thủ tục check in sẽ nhanh thôi quý khách, nhân viên sẽ ở đó và hướng dẫn tận nơi.Mỗi người đặt phòng sẽ phải check in nhận phòng nhé. Để thuận tiện cho quá trình check in quý khách nên lưu ý các bước sau : \nBước 1: Quý khách vui lòng cung cấp thông tin đã đặt phòng trước đó ( nếu có). Nếu chưa đặt  phòng thì thông báo với nhân viên để được hướng dẫn đặt phòng \nBước 2: Xuất trình CMND/Hộ chiếu cá nhân cho lễ tân khách sạn \nBước 3: Kí tên vào form của khách sạn để xác nhận lưu trú \nBước 4: Nhận chìa khóa  và lên phòng theo hướng dẫn của nhân viên '
+  - text: > 
+      'Thủ tục check in sẽ nhanh thôi quý khách, nhân viên sẽ ở đó và hướng dẫn tận nơi.Mỗi người đặt phòng sẽ phải check in nhận phòng nhé. Để thuận tiện cho quá trình check in quý khách nên lưu ý các bước sau :
+      Bước 1: Quý khách vui lòng cung cấp thông tin đã đặt phòng trước đó ( nếu có). Nếu chưa đặt  phòng thì thông báo với nhân viên để được hướng dẫn đặt phòng 
+      Bước 2: Xuất trình CMND/Hộ chiếu cá nhân cho lễ tân khách sạn 
+      Bước 3: Kí tên vào form của khách sạn để xác nhận lưu trú 
+      Bước 4: Nhận chìa khóa  và lên phòng theo hướng dẫn của nhân viên '
   utter_xưng_hô:
   - text: Chào {sex}{name}. Khách sạn Palm hân hạnh được tiếp đón. '
   - text: Chào {sex}{name}. Hận hạnh được phục vụ quý khách
@@ -92,11 +97,24 @@ responses:
   utter_hotline:
   - text: Quý khách có thể liên hệ qua số điện thoại của khách sạn là 02373 5 99999 hoặc 0913 625 968
   utter_check_out:
-  - text: Thủ tục check out cũng vô cùng đơn giản dành cho quý khách, nhân viên sẽ hướng dẫn với những khách hàng lần đầu đến khách sạn cũng như khách hàng đã đến. Quý khách sẽ thực hiện check out lần lượt theo hướng dẫn của nhân viên ở quầy lễ tân.Quý khách có thể xem qua các bước check out bên dưới để nắm rõ hơn \n Bước 1.Đi theo chỉ dẫn của nhân viên hướng dẫn đến quầy lễ tân \n Bước 2.Đưa lại chìa khóa cho  nhân viên lễ tân và làm theo hướng dẫn \n Bước 3. Xem qua các chi phí phát sinh nếu có, kiểm tra hóa đơn lễ tân đưa \n Bước 4. Thanh toán và kí xác nhận hóa đơn \n Bước 5. Nhận lại giấy tờ cá nhân và đi theo nhân viên hướng dẫn ra ngoài khách sạn
+  - text: >
+      Thủ tục check out cũng vô cùng đơn giản dành cho quý khách, nhân viên sẽ hướng dẫn với những khách hàng lần đầu đến khách sạn cũng như khách hàng đã đến. Quý khách sẽ thực hiện check out lần lượt theo hướng dẫn của nhân viên ở quầy lễ tân.Quý khách có thể xem qua các bước check out bên dưới để nắm rõ hơn 
+      Bước 1.Đi theo chỉ dẫn của nhân viên hướng dẫn đến quầy lễ tân  
+      Bước 2.Đưa lại chìa khóa cho  nhân viên lễ tân và làm theo hướng dẫn 
+      Bước 3. Xem qua các chi phí phát sinh nếu có, kiểm tra hóa đơn lễ tân đưa 
+      Bước 4. Thanh toán và kí xác nhận hóa đơn 
+      Bước 5. Nhận lại giấy tờ cá nhân và đi theo nhân viên hướng dẫn ra ngoài khách sạn.
   utter_dịch_vụ_ăn_sáng:
   - text: Bữa ăn sáng tự chọn sẽ được phục vụ tại nhà hàng Coconut tại tầng 10 của khách sạn, phục vụ từ 6:30 giờ – 09:30 sáng hàng ngày.
   utter_dịch_vụ_ăn_trưa:
-  - text: Bữa trưa ở Palm cũng hết sức tuyệt vời, không kém gì bữa sáng của quý khách.Khu vực ăn trưa cũng sẽ có nhiều để quý khách có thể chọn lựa được địa điểm thích hợp nhất với mình và gia đình nếu đi cùng.Nhân viên sẽ luôn trực để phục vụ quý khách.Mọi món ăn sẽ được thông bảo trên bảng tin thông báo tại nhà hàng của khách sạn.Quý khách sẽ có bữa trưa ngon miệng và đầy ắp niềm vui.
+  - text: > 
+      Bữa trưa ở Palm cũng hết sức tuyệt vời, không kém gì bữa sáng của quý khách. 
+      Khu vực ăn trưa cũng sẽ có nhiều để quý khách có thể chọn lựa được địa điểm thích hợp nhất với mình và gia đình nếu đi cùng.Nhân viên sẽ luôn trực để phục vụ quý khách.
+      Mọi món ăn sẽ được thông bảo trên bảng tin thông báo tại nhà hàng của khách sạn.Quý khách sẽ có bữa trưa ngon miệng và đầy ắp niềm vui. 
+  
+  
+  
+  
   utter_dịch_vụ_ăn_tối:
   - text: Buổi tối , khách sạn Palm cũng không quên chuẩn bị cho quý khách những món ăn ngon và thú vị. Để cung cấp cho quý khách đầy đủ dinh dưỡng cần thiết sau một ngày hoạt động mệt mỏi. Khung cảnh ăn tối sẽ được khách sạn chuẩn bị vô cùng lãng mạn để quý khách có thể thư giãn, cảm nhận, thưởng thức. Và luôn luôn có nhân viên phục vụ quý khách và giải đáp mọi thắc mắc cũng như yêu cầu từ quý khách.
   utter_website_khách_sạn:
