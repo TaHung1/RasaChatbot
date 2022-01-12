@@ -1,0 +1,81 @@
+version: '3.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+  session_started_metadata: true
+intents:
+- greet
+- xưng_hô
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- cam_on
+- check_in
+- địa_chỉ_khách_sạn
+- chất_lượng_khách_sạn
+- lịch_sử_khách_sạn
+- mức_độ_nổi_tiếng
+- quản_lí_khách_sạn
+- an_ninh_khách_sạn
+- giá_phòng
+- phòng_ngủ
+- phòng_tắm
+- tivi
+- view_ban_công
+- tủ_đồ
+- bàn_ghế
+- tủ_lạnh
+- đồ_ăn
+- thẻ_tích_điểm
+- chờ_đợi
+- khen
+- chê
+entities:
+- TV
+- food
+- loyalty_card
+- name
+- price
+- sex
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_cam_on:
+  - text: Không có gì
+  utter_check_in:
+  - text: 'Thủ tục check in sẽ nhanh thôi quý khách, nhân viên sẽ ở đó và hướng dẫn tận nơi.Mỗi người đặt phòng sẽ phải check in nhận phòng nhé. Để thuận tiện cho quá trình check in quý khách nên lưu ý các bước sau : Bước 1: Quý khách vui lòng cung cấp thông tin đã đặt phòng trước đó ( nếu có). Nếu chưa đặt  phòng thì thông báo với nhân viên để được hướng dẫn đặt phòng Bước 2: Xuất trình CMND/Hộ chiếu cá nhân cho lễ tân khách sạn Bước 3: Kí tên vào form của khách sạn để xác nhận lưu trú Bước 4: Nhận chìa khóa  và lên phòng theo hướng dẫn của nhân viên '
+  utter_xưng_hô:
+  - text: Chào {sex}{name}. Khách sạn Akino hân hạnh được tiếp đón. '
+  - text: Chào {sex}{name}. Hận hạnh được phục vụ quý khách
+  - text: Chào {sex}{name}. Rất vui khi được {sex} tin tưởng
+  - text: Khách sạn Akino xin chào {sex}{name}.
+  - text: Kính chào {sex}{name}
+  utter_khen:
+  - text: Quý khách hài lòng là khách sạn Akino rất vui
+  - text: Khách sạn rất vui khi được quý khách khen hết lời như vậy
+  - text: Dạ cảm ơn lời khen của quý khách
+  utter_chê:
+  - text: Thứ lỗi cho khách sạn nếu có gì không hài lòng quý khách
+  - text: Khách sạn sẽ khắc phục ạ
+  - text: Xin lỗi quý khách
+actions:
+- utter_cam_on
+- utter_check_in
+- utter_chê
+- utter_greet
+- utter_khen
+- utter_xưng_hô

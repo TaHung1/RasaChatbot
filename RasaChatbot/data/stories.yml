@@ -1,0 +1,65 @@
+version: "3.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: cam on
+  steps:
+  - intent: cam_on
+  - action: utter_cam_on
+
+
+- story: check in 
+  steps:
+  - intent: check_in
+  - action: utter_check_in
+
+- story: chào hỏi
+  steps:
+  - intent: xưng_hô
+  - action: utter_xưng_hô
+  
+# - story: interactive_story_1
+#   steps:
+#   - intent: xưng_hô
+#     entities:
+#     - sex: Anh
+#     - name: Hưng
+#   - action: utter_xưng_hô
+- story: khen
+  steps:
+  - intent: khen
+  - action: utter_khen
+
+- story: chê
+  steps:
+  - intent: chê
+  - action: utter_chê
+
+

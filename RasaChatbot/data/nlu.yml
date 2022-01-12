@@ -1,0 +1,347 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - xin chào
+    - Mình có vài câu hỏi
+    - Có ai ở đây không
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - Chào tạm biệt
+    - Tạm biệt 
+    - Tạm biệt nhé
+    - Hẹn gặp lại
+    - Chúc một ngày tốt lành
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: cam_on
+  examples: |
+    - Cảm ơn bạn
+    - Cảm ơn bạn nhé
+    - Cảm ơn nhiều
+- intent: xưng_hô
+  examples: |
+    - [Anh](sex) là [Hùng](name)
+    - [Anh](sex) là [Nam](name)
+    - [Anh](sex) là [Minh](name)
+    - [Anh](sex) là [Đức](name)
+    - [Anh](sex) là [Tuấn](name)
+    - [Anh](sex) là [Quân](name)
+    - [Anh](sex) là [Thắng](name)
+    - [Anh](sex) là [Thịnh](name)
+    - [Anh](sex) là [Long](name)
+    - [Cô](sex) là [Hoa](name)
+    - [Cô](sex) là [Thúy](name)
+    - [Cô](sex) là [Hương](name)
+    - [Cô](sex) là [Lan](name)
+    - [Cô](sex) là [Hồng](name)
+    - [Chị](sex) là [Hạnh](name)
+    - [Chị](sex) là [Linh](name)
+    - Em là [Nhung](name)
+    - Em là [Nhi](name)
+    - Em là [Liên](name)
+
+- intent: check_in
+  examples: |
+    - Thủ tục check in như nào ?
+    - Làm sao để check in ?
+    - Check in ở đâu ?
+    - Check in có phức tạp không ?
+    - Check in mọi lúc được chứ ?
+    - Check in từng người hay đại diện nhỉ ?
+    - Check in chậm hay nhanh ?
+    - Có thể check in qua app không ?
+
+- intent: địa_chỉ_khách_sạn
+  examples: |
+    - Địa chỉ khách sạn Akino ở đâu ?
+    - Chỗ nào vậy ?
+    - Mình có thể xin địa chỉ khách sạn được không ?
+    - Vị trí khách sạn ?
+    - Khách sạn ở đâu ?
+    - Khách sạn nằm ở vị trí nào ?
+
+- intent: chất_lượng_khách_sạn
+  examples: |
+    - Thông tin chất lượng ra sao ?
+    - Có những đánh giá gì về khách sạn nổi bật không ?
+    - Chất lượng khách sạn mấy sao ?
+    - Chất lượng thì sao ?
+    - Mọi người đánh giá sao về khách sạn ?
+- intent: lịch_sử_khách_sạn
+  examples: |
+    -	Khách sạn hoạt động lâu chưa?
+    - Khách sạn xây dựng lâu chưa?
+    - Khách sạn đi vào kinh doanh được bao năm rồi?
+    - Năm nào khách sạn khánh thành?
+    - Khách sạn lâu năm chưa?
+- intent: mức_độ_nổi_tiếng
+  examples: |
+    -	Khách sạn được biết đến rộng rãi chứ?
+    - Khách sạn nổi tiếng nhỉ?
+    - Trên các trang mạng có đề cập khách sạn không?
+    - Khách sạn được quảng cáo khắp nơi không?
+    - Sao khách sạn Akino nổi tiếng vậy?
+    - Khách sạn nổi tiếng là do đâu?
+    - Khách sạn nổi tiếng lâu chưa?
+    - Mọi người đều biết đến khách sạn hả?
+    - Chắc nhiều người biết đến khách sạn nhỉ?
+    - Nhiều người biết lắm đấy nhỉ?
+    - Nổi tiếng khắp cả nước luôn à?
+- intent: quản_lí_khách_sạn
+  examples: |
+    - Ai là chủ khách sạn vậy?
+    - Giám đốc khách sạn là ai?
+    - Ai đứng ra quản lý khách sạn?
+    - Ai nắm quyền điều hành khách sạn ?
+    - Người điều hành là ai?
+    - Người quản lý là ai?
+    - Cho tôi biết người quản lý được không?
+    - Tôi muốn biết giám đốc của khách sạn ?
+    - Tôi  muốn biết ai điều hành khách sạn được không?
+- intent: an_ninh_khách_sạn
+  examples: |
+    -	Khách sạn được bảo vệ tốt chứ?
+    - Khách sạn có an ninh tốt không?
+    - An toàn của khách hàng có được đảm bảo không?
+    - Bảo vệ có ở mọi nơi để đảm bảo an toàn chứ?
+    - Chộm cắp thì sao?
+    - Cướp thì sao?
+    - Đánh lộn trong khu vực khách sạn thì sao?
+    - Khách hàng bị tấn công bởi kẻ xấu thì sao?
+- intent: giá_phòng
+  examples: |
+    -	[Giá](price) phòng là bao nhiêu?
+    - Có bao nhiêu loại [giá](price) của phòng?
+    - Khách sạn mình có [giá](price) phòng cao không?
+    - Phòng nào đắt nhất?
+    - Mức [giá](price) từng phòng như nào?
+    - Cho hỏi [giá](price) phòng?
+    - [Giá](price) cả phòng phải chăng chứ?
+    - [Giá](price) phù hợp với mọi vị khách không?
+    - Báo [giá](price) phòng cho tôi nhé
+    - Hãy cho tôi xem [giá](price) các loại phòng bên Akino
+    - [Giá](price) phòng thay đổi như thế nào?
+    - Muốn biết [giá](price) phòng để chọn thì sao bạn?
+
+- intent: phòng_ngủ
+  examples: |
+    -	Mỗi phòng có bao nhiêu phòng ngủ con?
+    - Có bao nhiêu giường ngủ?
+    - Có phòng ngủ đôi không?
+    - Phòng ngủ thoải mái chứ?
+    - Về phòng ngủ thì sao?
+    - Ngủ ở đâu?
+- intent: phòng_tắm
+  examples: |
+    -	Phòng tắm thì sao ?
+    - Phòng tắm có bồn tắm chứ?
+    - Phòng tắm có rộng không?
+    - Phòng tắm thoải mái không?
+    - Phòng tắm ở chỗ nào ?
+- intent: tivi
+  examples: |
+    -	Phòng có [ti vi](TV) không?
+    - Về [tivi](TV) để xem thì sao?
+    - Có lắp [tivi](TV) chứ?
+- intent: view_ban_công
+  examples: |
+    - Ban công rộng không?
+    - Ban công nhìn ra đâu?
+    - Ban công đẹp chứ?
+    - Nhìn ra biển hay núi hay thành  phố?
+- intent: tủ_đồ
+  examples: |
+    - Có nơi để đồ chứ?
+    - Tủ đồ để quần áo thì sao?
+    -	Để đồ đạc ở đâu?
+    - Quần áo để đâu?
+- intent: bàn_ghế
+  examples: |
+    - Phòng có bàn ghế chứ?
+    - Bàn làm việc thì sao?
+    - Bàn ăn thì sao?
+    - Chỗ ngồi thoải mái chứ?
+    - Bố trí bàn ghế của khách sạn thì sao?
+    - Bàn ghế khách sạn có những gì?
+    - Mỗi phòng được trang bị bao nhiêu bàn ghế?
+- intent: tủ_lạnh
+  examples: |
+    - Tủ lạnh loại gì?
+    - Có tủ lạnh chứ?
+    - Đồ uống để tủ lạnh được không?
+    - Tủ lạnh to hay nhỏ?
+    - Muốn để đồ ăn thì làm sao nhỉ?
+    - Khách sạn có lắp tủ lạnh để khách tiện sử dụng không?
+    - Tôi muốn có tủ lạnh để đồ
+    - Sử dụng tủ lạnh ra sao?
+    - Vấn đề đồ ăn, nước mang theo sử lý như nào?
+- intent: đồ_ăn
+  examples: |
+    - Dịch vụ [đồ ăn](food) thì sao?
+    - Có thể gọi [đồ ăn](food) tùy ý chứ?
+    - [Đồ ăn](food) thì thế nào?
+    - Ai sẽ đưa [đồ ăn](food) cho khách hàng?
+    - Làm sao để gọi [đồ ăn](food) ?
+    - [Đồ ăn](food) miền Bắc thì sao?
+    - [Đồ ăn](food) miền Trung thì sao?
+    - [Đồ ăn](food) miền Nam thì sao?
+    - [Đồ ăn](food) nước ngoài thì sao?
+    - [Đồ ăn](food) sẽ chuẩn bị nhanh không?
+    - [Đồ ăn](food) có đảm bảo không?
+
+- intent: thẻ_tích_điểm
+  examples: |
+    - [Thẻ tích điểm](loyalty_card) có chứ?
+    - [Thẻ tích điểm](loyalty_card) thì sao?
+    - Đăng kí [thẻ tích điểm](loyalty_card) ở đâu?
+    - Làm sao để có [thẻ tích điểm](loyalty_card)?
+    - Muốn đăng kí [thẻ tích điểm](loyalty_card) thì cần yêu cầu gì?
+    - Khách sạn có đổi [thẻ tích điểm](loyalty_card) không?
+- intent: chờ_đợi
+  examples: |
+    - Chờ tôi một lát nhé
+    - Chờ tôi chút
+    - Chờ tôi quay lại
+    - Tôi sẽ quay lại ngay
+    - Hãy đợi tôi trong ít phút
+    - Vui lòng đợi tôi một lúc
+    - Tôi có chút việc, đợi tôi nhé
+    - Tôi sẽ nói chuyện với bạn sau vài phút
+    - Bạn không phiền nếu chờ đợi tôi chứ?
+    - Chờ đợi tôi vài phút được không?
+    - Sẽ không lâu đâu, tôi sẽ quay lại
+    - Xin lỗi, hãy đợi tôi một lúc
+    - Xin lỗi, bạn đợi tôi 5p nhé
+    - Xin lỗi vì sự bất tiện ,hãy đợi tôi ít phút
+- intent: khen
+  examples: |
+    - Khách sạn thật đẹp
+    - Khách sạn tuyệt vời
+    - Dịch vụ thật tuyệt
+    - Mọi thứ gần như hoàn hảo
+    - Thật là một khách sạn 5 sao
+    - Tuyệt lắm
+    - Hoàn hảo
+    - Tuyệt vời quá
+    - Rất hài lòng về khách sạn
+    - Món ăn rất ngon
+    - Khu vui chơi thật đẹp
+    - Khu thể thao rất đẹp
+    - Bể bơi tuyệt thật
+    - Phòng rất thoải mái, đầy đủ tiện nghi
+    - Nhân viên rất thân thiện
+
+- intent: chê
+  examples: |
+    - Thật tệ
+    - Tệ quá đi
+    - Món ăn thật dở
+    - Không hài lòng về các phục vụ
+    - Phòng không được như ý muốn
+    - Dịch vụ chán quá đi
+    - Thủ tục thuê thật lằng nhằng
+    - Khách sạn quá chán
+    - Khách sạn có nhiều thứ chưa ổn
+    - Quá kém
+    - Không hài lòng
+    - Bực mình về khách sạn thật
+    - Thật không thể chịu nổi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
