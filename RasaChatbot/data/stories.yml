@@ -62,4 +62,101 @@ stories:
   - intent: chê
   - action: utter_chê
 
+# - story: đặt phòng 1
+#   steps:
+#   - intent: đặt_phòng_gấp
+#   - action: utter_đặt_phòng_gấp
+
+# - story: đặt phòng 2
+#   steps:
+#   - intent: cách_đật_phòng
+#   - action: utter_cách_đật_phòng
+
+- story: mạng 1
+  steps:
+  - intent: mạng
+  - action: utter_mạng
+
+- story: hỏi địa chỉ khách sạn
+  steps:
+  - intent: địa_chỉ_khách_sạn
+  - action: utter_địa_chỉ_khách_sạn
+
+- story: hỏi chất lượng khách sạn
+  steps:
+  - intent: chất_lượng_khách_sạn
+  - action: utter_chất_lượng_khách_sạn
+
+- story: hỏi an_ninh_khách_sạn
+  steps:
+  - intent: an_ninh_khách_sạn
+  - action: utter_an_ninh_khách_sạn
+
+- story: hỏi giá phòng
+  steps:
+  - intent: giá_phòng
+  - action: utter_giá_phòng
+- story: hỏi phòng tắm
+  steps:
+  - intent: phòng_tắm
+  - action: utter_phòng_tắm
+- story: hỏi ti vi
+  steps:
+  - intent: tivi
+  - action: utter_tivi
+- story: hỏi view ban công
+  steps:
+  - intent: view_ban_công
+  - action: utter_view_ban_công
+- story: hỏi tủ đồ
+  steps:
+  - intent: tủ_đồ
+  - action: utter_tủ_đồ
+- story: hỏi bàn ghế
+  steps:
+  - intent: bàn_ghế
+  - action: utter_bàn_ghế
+- story: hỏi tủ lạnh
+  steps:
+  - intent: tủ_lạnh
+  - action: utter_tủ_lạnh
+
+- story: dịch vụ ăn sáng
+  steps: 
+  - intent: dịch_vụ_ăn_sáng
+  - action: utter_dịch_vụ_ăn_sáng
+- story: dịch vụ ăn tối
+  steps:
+  - intent: dịch_vụ_ăn_tối
+  - action: utter_dịch_vụ_ăn_tối
+- story: dịch vụ ăn trưa
+  steps: 
+  - intent: dịch_vụ_ăn_trưa
+  - action: utter_dịch_vụ_ăn_trưa
+- story: check out
+  steps:
+  - intent: check_out
+  - action: utter_check_out
+- story: đặt phòng
+  steps:
+  - intent: đặt_phòng_gấp
+  - action: utter_đặt_phòng_gấp
+- story: hỏi hotline
+  steps:
+  - intent: hotline
+  - action: utter_hotline
+# - story: hỏi cách đặt phòng
+#   steps:
+#   - intent: cách_đặt_phòng
+#   - action: utter_cách_đặt_phòng
+
+- story: hỏi_nhân_viên
+  steps:
+  - intent: nhân_viên
+  - action: utter_nhân_viên
+
+- story: hỏi_website
+  steps:
+  - intent: website_khách_sạn
+  - action: utter_website_khách_sạn
 

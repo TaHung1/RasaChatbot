@@ -8,13 +8,12 @@ nlu:
     - hi
     - hello there
     - good morning
-    - good evening
-    - moin
+    - good evening 
     - hey there
     - let's go
     - hey dude
-    - goodmorning
-    - goodevening
+    - good morning
+    - good evening
     - good afternoon
     - xin chào
     - Mình có vài câu hỏi
@@ -138,7 +137,7 @@ nlu:
 
 - intent: địa_chỉ_khách_sạn
   examples: |
-    - Địa chỉ khách sạn Akino ở đâu ?
+    - Địa chỉ khách sạn Palm ở đâu ?
     - Chỗ nào vậy ?
     - Mình có thể xin địa chỉ khách sạn được không ?
     - Vị trí khách sạn ?
@@ -165,7 +164,7 @@ nlu:
     - Khách sạn nổi tiếng nhỉ?
     - Trên các trang mạng có đề cập khách sạn không?
     - Khách sạn được quảng cáo khắp nơi không?
-    - Sao khách sạn Akino nổi tiếng vậy?
+    - Sao khách sạn Palm nổi tiếng vậy?
     - Khách sạn nổi tiếng là do đâu?
     - Khách sạn nổi tiếng lâu chưa?
     - Mọi người đều biết đến khách sạn hả?
@@ -204,7 +203,7 @@ nlu:
     - [Giá](price) cả phòng phải chăng chứ?
     - [Giá](price) phù hợp với mọi vị khách không?
     - Báo [giá](price) phòng cho tôi nhé
-    - Hãy cho tôi xem [giá](price) các loại phòng bên Akino
+    - Hãy cho tôi xem [giá](price) các loại phòng bên Palm
     - [Giá](price) phòng thay đổi như thế nào?
     - Muốn biết [giá](price) phòng để chọn thì sao bạn?
 
@@ -331,6 +330,157 @@ nlu:
     - Không hài lòng
     - Bực mình về khách sạn thật
     - Thật không thể chịu nổi
+
+- intent: dịch_vụ_ăn_sáng
+  examples: |
+    - Chúng tôi sẽ ăn sáng như thế nào?
+    - Chúng tôi sẽ ăn sáng ở đâu?
+    - Khu vực ăn sáng
+    - Khu vực ăn sáng thì sao?
+    - Ai sẽ hướng dẫn chúng tôi ăn sáng?
+    - Nhân viên phục vụ ăn sáng chứ?
+    - Thông tin về bữa sáng được thông báo ở đâu?
+    - Thời gian ăn sáng sẽ là lúc nào ?
+    - Thực đơn sáng có những gì?
+    - Thực đơn ăn sáng thì sao
+    - Thực đơn sáng sẽ thay đổi từng ngày chứ?
+    - Ăn sáng thì sao?
+    - Ăn sáng
+    - Bữa sáng
+    - Bữa sáng thì sao?
+    - Có café sáng chứ?
+    - Có sữa vào buổi sáng không?
+    - Có đồ uống gì vào buổi sáng?
+    - Bữa sáng đầy đủ chứ?
+    - Khách sạn có chuẩn bị bữa sáng cho khách không?
+
+- intent: dịch_vụ_ăn_tối
+  examples: |
+    - Chúng tôi sẽ ăn tối như thế nào?
+    - Chúng tôi sẽ ăn tối ở đâu?
+    - Khu vực ăn tối
+    - Khu vực ăn tối thì sao?
+    - Ai sẽ hướng dẫn chúng tôi ăn tối?
+    - Nhân viên phục vụ ăn tối chứ?
+    - Thông tin về bữa tối được thông báo ở đâu?
+    - Thời gian ăn tối sẽ là lúc nào ?
+    - Thực đơn tối có những gì?
+    - Thực đơi ăn tối thì sao?
+    - Thực đơn tối sẽ thay đổi từng ngày chứ?
+    - Ăn tối thì sao?
+    - Ăn tối
+    - Bữa tối
+    - Bữa tối thì sao?
+    - Có đồ uống gì vào buổi tối?
+    - Bữa tối thì sao nhỉ?
+    - Ăn tối thì sao nhỉ?
+    - Khách sạn có chuẩn bị bữa tối cho khách chứ
+
+- intent: dịch_vụ_ăn_trưa
+  examples: |
+    - Chúng tôi sẽ ăn trưa như thế nào?
+    - Chúng tôi sẽ ăn trưa ở đâu?
+    - Khu vực ăn trưa
+    - Khu vực ăn trưa thì sao?
+    - Ai sẽ hướng dẫn chúng tôi ăn trưa?
+    - Nhân viên phục vụ ăn trưa chứ?
+    - Thông tin về bữa trưa được thông báo ở đâu?
+    - Thời gian ăn trưa sẽ là lúc nào ?
+    - Thực đơn trưa có những gì?
+    - Thực đơn ăn chưa thì sao?
+    - Thực đơn trưa sẽ thay đổi từng ngày chứ?
+    - Ăn trưa thì sao?
+    - Ăn trưa thì sao nhỉ?
+    - Ăn trưa
+    - Bữa trưa
+    - Bữa trưa thì sao?
+    - Bữa trưa thì sao nhỉ
+    - Có đồ uống gì vào buổi trưa?
+    - Khách sạn có chuẩn bị bữa trưa cho khách chứ?
+
+- intent: check_out
+  examples: |
+    - Thủ tục check out như nào ?
+    - Thủ tục check out làm sao?
+    - Thủ tục check out đúng là gì?
+    - Làm sao để check out?
+    - Check out hợp lệ kiểu gì?
+    - Check out ở đâu?
+    - Check out?
+    - Nhân viên có hướng dẫn check out không?
+    - Check out có phức tạp không?
+    - Check out mọi lúc được chứ?
+    - Check out từng người hay đại diện nhỉ ?
+    - Check out chậm hay nhanh?
+    - Có thể check out qua app không?
+    - Làm sao để [trả phòng](check out) ?
+    - Thủ tục [trả phòng](check out) như nào ?
+
+- intent: hotline
+  examples: |
+    - Tôi có thể liên lạc qua số điện thoại nào?
+    - Hotline của khách sạn là gì?
+    - Hotline thì sao?
+    - Để lại số liên lạc nhé
+    - Liên lạc bằng điện thoại được không?
+    - Tôi muốn biết hotline của khách sạn
+    - Bạn có thể cho tôi biết số để liên lạc với nhân viên tư vấn khách sạn không?
+    - Hotline khách sạn là gì?
+    - Nếu tôi muốn gọi khách sạn để tư vấn thì sao?
+    - Hãy cho tôi cách để gọi điện khi cần tư vấn từ khách sạn?
+
+- intent: website_khách_sạn
+  examples: |
+    - Khách sạn có trang web chứ?
+    - Khách sạn có fanpage chứ?
+    - Khách sạn có đường dẫn thông tin trên mạng không?
+    - Các phương tiện liên lạc với khách sạn qua mạng là gì?
+    - Về fanpage thì sao?
+    - Xem web khách sạn qua đường dẫn nào?
+    - Về web của khách sạn thì sao?
+
+- intent: nhân_viên
+  examples: |
+    - Nhân viên của khách sạn tốt không?
+    - Khách sạn có nhân viên được đào tạo hết chứ?
+    - Nhân viên phục vụ ra sao?
+    - Nhân viên qua đào tạo cả chứ?
+    - Nhân viên thì sao?
+    - Nhân viên phục vụ 24/24 chứ
+    - Nhân viên thân thiện không?
+    - Nhân viên nhiệt tình chứ?
+    - Nhân viên có tận tâm với khách hàng không?
+    - Nhân viên có yêu quý khách hàng không?
+
+- intent: đặt_phòng_gấp
+  examples: |
+    - Trong trường hợp cần phòng gấp, tôi phải làm gì ?
+    - Tôi muốn đặt phòng gấp 
+    - Có cách nào để đặt phòng gấp được không ?
+    
+- intent: cách_đặt_phòng
+  examples: |
+    - Tôi có thể đặt phòng bằng cách nào ?
+    - Có cách nào để đặt phòng ?
+    - Làm sao để đặt phòng ?
+    - Tôi cần đặt phòng ?
+
+- intent: mạng
+  examples: |
+    - Khách sạn có sẵn mạng Internet hay không ?   
+    - Có dịch vụ wifi miễn phí không?
+    - Wifi thì sao?
+
+
+
+    
+
+
+
+
+
+
+
 
 
 

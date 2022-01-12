@@ -33,6 +33,17 @@ intents:
 - chờ_đợi
 - khen
 - chê
+- dịch_vụ_ăn_sáng
+- dịch_vụ_ăn_tối
+- dịch_vụ_ăn_trưa
+- check_out
+- hotline
+- website_khách_sạn
+- nhân_viên
+- đặt_phòng_gấp
+- cách_đặt_phòng
+- mạng
+
 entities:
 - TV
 - food
@@ -40,6 +51,9 @@ entities:
 - name
 - price
 - sex
+- check out
+
+
 responses:
   utter_greet:
   - text: Hey! How are you?
@@ -57,21 +71,58 @@ responses:
   utter_cam_on:
   - text: Không có gì
   utter_check_in:
-  - text: 'Thủ tục check in sẽ nhanh thôi quý khách, nhân viên sẽ ở đó và hướng dẫn tận nơi.Mỗi người đặt phòng sẽ phải check in nhận phòng nhé. Để thuận tiện cho quá trình check in quý khách nên lưu ý các bước sau : Bước 1: Quý khách vui lòng cung cấp thông tin đã đặt phòng trước đó ( nếu có). Nếu chưa đặt  phòng thì thông báo với nhân viên để được hướng dẫn đặt phòng Bước 2: Xuất trình CMND/Hộ chiếu cá nhân cho lễ tân khách sạn Bước 3: Kí tên vào form của khách sạn để xác nhận lưu trú Bước 4: Nhận chìa khóa  và lên phòng theo hướng dẫn của nhân viên '
+  - text: 'Thủ tục check in sẽ nhanh thôi quý khách, nhân viên sẽ ở đó và hướng dẫn tận nơi.Mỗi người đặt phòng sẽ phải check in nhận phòng nhé. Để thuận tiện cho quá trình check in quý khách nên lưu ý các bước sau : \nBước 1: Quý khách vui lòng cung cấp thông tin đã đặt phòng trước đó ( nếu có). Nếu chưa đặt  phòng thì thông báo với nhân viên để được hướng dẫn đặt phòng \nBước 2: Xuất trình CMND/Hộ chiếu cá nhân cho lễ tân khách sạn \nBước 3: Kí tên vào form của khách sạn để xác nhận lưu trú \nBước 4: Nhận chìa khóa  và lên phòng theo hướng dẫn của nhân viên '
   utter_xưng_hô:
-  - text: Chào {sex}{name}. Khách sạn Akino hân hạnh được tiếp đón. '
+  - text: Chào {sex}{name}. Khách sạn Palm hân hạnh được tiếp đón. '
   - text: Chào {sex}{name}. Hận hạnh được phục vụ quý khách
   - text: Chào {sex}{name}. Rất vui khi được {sex} tin tưởng
-  - text: Khách sạn Akino xin chào {sex}{name}.
+  - text: Khách sạn Palm xin chào {sex}{name}.
   - text: Kính chào {sex}{name}
   utter_khen:
-  - text: Quý khách hài lòng là khách sạn Akino rất vui
+  - text: Quý khách hài lòng là khách sạn Palm rất vui
   - text: Khách sạn rất vui khi được quý khách khen hết lời như vậy
   - text: Dạ cảm ơn lời khen của quý khách
   utter_chê:
   - text: Thứ lỗi cho khách sạn nếu có gì không hài lòng quý khách
   - text: Khách sạn sẽ khắc phục ạ
   - text: Xin lỗi quý khách
+  utter_chờ_đợi:
+  - text: Hãy quay lại sớm nhé!
+  - text: Tôi sẽ đợi bạn ở đây!
+  utter_hotline:
+  - text: Quý khách có thể liên hệ qua số điện thoại của khách sạn là 02373 5 99999 hoặc 0913 625 968
+  utter_check_out:
+  - text: Thủ tục check out cũng vô cùng đơn giản dành cho quý khách, nhân viên sẽ hướng dẫn với những khách hàng lần đầu đến khách sạn cũng như khách hàng đã đến. Quý khách sẽ thực hiện check out lần lượt theo hướng dẫn của nhân viên ở quầy lễ tân.Quý khách có thể xem qua các bước check out bên dưới để nắm rõ hơn \n Bước 1.Đi theo chỉ dẫn của nhân viên hướng dẫn đến quầy lễ tân \n Bước 2.Đưa lại chìa khóa cho  nhân viên lễ tân và làm theo hướng dẫn \n Bước 3. Xem qua các chi phí phát sinh nếu có, kiểm tra hóa đơn lễ tân đưa \n Bước 4. Thanh toán và kí xác nhận hóa đơn \n Bước 5. Nhận lại giấy tờ cá nhân và đi theo nhân viên hướng dẫn ra ngoài khách sạn
+  utter_dịch_vụ_ăn_sáng:
+  - text: Bữa ăn sáng tự chọn sẽ được phục vụ tại nhà hàng Coconut tại tầng 10 của khách sạn, phục vụ từ 6:30 giờ – 09:30 sáng hàng ngày.
+  utter_dịch_vụ_ăn_trưa:
+  - text: Bữa trưa ở Palm cũng hết sức tuyệt vời, không kém gì bữa sáng của quý khách.Khu vực ăn trưa cũng sẽ có nhiều để quý khách có thể chọn lựa được địa điểm thích hợp nhất với mình và gia đình nếu đi cùng.Nhân viên sẽ luôn trực để phục vụ quý khách.Mọi món ăn sẽ được thông bảo trên bảng tin thông báo tại nhà hàng của khách sạn.Quý khách sẽ có bữa trưa ngon miệng và đầy ắp niềm vui.
+  utter_dịch_vụ_ăn_tối:
+  - text: Buổi tối , khách sạn Palm cũng không quên chuẩn bị cho quý khách những món ăn ngon và thú vị. Để cung cấp cho quý khách đầy đủ dinh dưỡng cần thiết sau một ngày hoạt động mệt mỏi. Khung cảnh ăn tối sẽ được khách sạn chuẩn bị vô cùng lãng mạn để quý khách có thể thư giãn, cảm nhận, thưởng thức. Và luôn luôn có nhân viên phục vụ quý khách và giải đáp mọi thắc mắc cũng như yêu cầu từ quý khách.
+  utter_website_khách_sạn:
+  - text: Cần thêm thông tin liên hệ quý khách vui lòng truy cập website của khách sạn www.palmhotel.vn hoặc fanpage palmhotelthanhhoa
+  utter_nhân_viên:
+  - text: Nhân viên của khách sạn luôn được đào tạo tốt, quý khách sẽ rất hài lòng về nhân viên của Palm
+  utter_đặt_phòng_gấp:
+  - text: Trong trường hợp Quý Khách cần phòng gấp, quý khách nên gọi điện trực tiếp số tổng đài của Khách sạn 0237.359.9999 hoặc số Hotline  0913.19.3368
+  # utter_cách_đặt_phòng:
+  # - text: Có 2 cách đơn giản để Quý Khách có thể đặt phòng tại Khách sạn \nCách 1 Quý khách gọi đến số điện thoại Khách sạn hoặc số Hotline để đặt phòng và được tư vấn trực tiếp 0237.35.99999  – 0913 19 3368\nCách 2 Quý khách truy cập mạng bán phòng online tại www.palmhotel.vn  và làm theo các bước hướng dẫn đặt phòng tại đây. Sau khi hoàn tất các bước đặt phòng, Khách sạn sẽ chủ động liên hệ với quý khách để hồi đáp những yêu cầu của Quý Khách.\nNgoài ra, trong trường hợp quý khách ở nước ngoài, hoặc không thể liên hệ qua điện thoại hay đặt phòng khách sạn thông qua website www.palmhotel.vn  quý khách có thể gởi email với yêu cầu đặt phòng chi tiết về địa chỉ  info@palmhotel.vn
+  utter_mạng:
+  - text: Toàn bộ khách sạn được thiết lập hệ thống internet không dây được sử dụng hoàn toàn miễn phí. Quý khách có thể liên hệ với quầy lễ tân để biết tên đăng nhập và mật khẩu. Mạng không dây cũng đều có sẵn ở mỗi phòng khách.
+  utter_địa_chỉ_khách_sạn: 
+  - text: 15 Phan Chu Trinh, Phường Điện Biên, TP.Thanh Hóa
+  utter_chất_lượng_khách_sạn:
+  - text: Khách sạn luôn đi đầu về chất lượng, quý khách yên tâm và tin tưởng Palm nhé
+  utter_an_ninh_khách_sạn:
+  - text: An toàn của khách hàng luôn được khách sạn đặt lên hàng đầu. Bảo vệ cho khách hàng 24/24 khi ở trong khu vực khách sạn
+  
+
+
+
+
+
+
+
 actions:
 - utter_cam_on
 - utter_check_in
@@ -79,3 +130,25 @@ actions:
 - utter_greet
 - utter_khen
 - utter_xưng_hô
+- utter_hotline
+- utter_check_out
+- utter_chờ_đợi
+- utter_dịch_vụ_ăn_tối
+- utter_dịch_vụ_ăn_trưa
+- utter_dịch_vụ_ăn_sáng
+- utter_nhân_viên
+- utter_đặt_phòng_gấp
+# - utter_cách_đặt_phòng
+- utter_mạng
+- utter_địa_chỉ_khách_sạn
+- utter_chất_lượng_khách_sạn
+- utter_an_ninh_khách_sạn
+- utter_website_khách_sạn
+- utter_view_ban_công
+- utter_tủ_đồ
+- utter_bàn_ghế
+- utter_tủ_lạnh
+- utter_tivi
+- utter_phòng_tắm
+- utter_giá_phòng
+
